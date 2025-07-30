@@ -10,14 +10,14 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Blazor Office Addin" />
   <Description DefaultValue="Blazor app added into Office." />
-  <IconUrl DefaultValue="https://localhost:5000/icon32.png" />
-  <SupportUrl DefaultValue="https://localhost:5000/support" />
+  <IconUrl DefaultValue="https://blazorofficeaddinpoc.netlify.app/icon32.png" />
+  <SupportUrl DefaultValue="https://blazorofficeaddinpoc.netlify.app/support" />
   <Hosts>
     <Host Name="Workbook"/>
     <Host Name="Document"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:5000/index.html" />
+    <SourceLocation DefaultValue="https://blazorofficeaddinpoc.netlify.app/index.html" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
 </OfficeApp>

@@ -1,11 +1,10 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
+
   <Id>e7f3c045-1111-2222-3333-abcdefabcdef</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>BlazorPOC</ProviderName>
@@ -16,7 +15,7 @@
   <SupportUrl DefaultValue="https://blazorofficeaddinpoc.netlify.app/support" />
 
   <Hosts>
-    <Host Name="Document"/>
+    <Host Name="Document" />
   </Hosts>
 
   <Requirements>
@@ -31,7 +30,7 @@
 
   <Permissions>ReadWriteDocument</Permissions>
 
-  <VersionOverrides Version="1.0">
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" Version="1.0">
     <Hosts>
       <Host xsi:type="Document">
         <DesktopFormFactor>
@@ -57,6 +56,7 @@
               </Group>
             </CustomTab>
           </ExtensionPoint>
+          <FunctionFile resid="TaskPaneUrl" />
         </DesktopFormFactor>
       </Host>
     </Hosts>
@@ -70,7 +70,7 @@
         <bt:Url id="TaskPaneUrl" DefaultValue="https://blazorofficeaddinpoc.netlify.app/index.html" />
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="TabLabel" DefaultValue="Blazor Application" />
+        <bt:String id="TabLabel" DefaultValue="Blazor Add-in" />
         <bt:String id="GroupLabel" DefaultValue="Add-in Tools" />
         <bt:String id="ButtonLabel" DefaultValue="Open Add-in" />
       </bt:ShortStrings>
